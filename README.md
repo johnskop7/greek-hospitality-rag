@@ -1,1 +1,3 @@
 # greek-hospitality-rag
+
+I am building a simple app based on RAG pipeline that will help greek people that are involved in hospitality management answer crucial questions that concern regulations in the domain of tourism and accomodation in Greece. This project is mainly inspired from a personal struggle that i had when trying to learn the necessary regulations for the management of my family-hotel in Skopelos. 
