@@ -18,17 +18,6 @@ Questions in Greek about **short-term rentals (βραχυχρόνια μίσθω
 
 **Penalties** stay within their topic (e.g. the fine for not declaring a booking → BKG).
 
-## Document set (proposed filenames)
-
-| filename | Document | Publisher | Date |
-|---|---|---|---|
-| `aade_str_faq_2025.pdf` | Συχνές ερωτήσεις βραχυχρόνιας μίσθωσης (49 ερωτήσεις) | ΑΑΔΕ | 2025-09-23 |
-| `aade_str_guide_2024.pdf` | Χρηστικός Οδηγός Βραχυχρόνιας Μίσθωσης Ακινήτων (μετά τον ν. 5073/2023) | ΑΑΔΕ | 2024-09 |
-| `aade_takk_faq_2026.pdf` | Συχνές ερωτήσεις Τέλους Ανθεκτικότητας στην Κλιματική Κρίση | ΑΑΔΕ | 2026-01 |
-| `mintour_str_specs_circular_2025.pdf` | Εγκύκλιος 19231/19.09.2025 — Προδιαγραφές ακινήτων βραχυχρόνιας μίσθωσης | Υπουργείο Τουρισμού | 2025-09-19 |
-| `law_5170_2025.pdf` | Ν. 5170/2025 (ΦΕΚ Α' 6/20.01.2025), άρθρο 3 | ΦΕΚ | 2025-01-20 |
-| `govgr_str_restrictions_2026.pdf` | Προσωρινοί περιορισμοί στις βραχυχρόνιες μισθώσεις (stegasi.gov.gr) | gov.gr | 2026-08-04 |
-| `aade_pol1187_2017.pdf` | ΠΟΛ 1187/2017 — base decision for the Μητρώο & Δήλωση Βραχυχρόνιας Διαμονής | ΑΑΔΕ | 2017-11-23 |
 
 ## How to read the tables
 
@@ -74,11 +63,11 @@ Questions in Greek about **short-term rentals (βραχυχρόνια μίσθω
 
 | ID | Ερώτηση | Αναμενόμενο έγγραφο | Status | Σημειώσεις |
 |---|---|---|---|---|
-| SAF-01 | Ποιος εξοπλισμός ασφαλείας είναι υποχρεωτικός (πυροσβεστήρας, ανιχνευτής καπνού, φαρμακείο); | `mintour_str_specs_circular_2025.pdf`, `law_5170_2025.pdf` | ✅ | |
+| SAF-01 | Ποιος εξοπλισμός ασφαλείας είναι υποχρεωτικός (πυροσβεστήρας, ανιχνευτής καπνού, φαρμακείο); | `mintour_str_specs_circular_2025.pdf`, `law_5170_2025_art3.pdf` | ✅ | |
 | SAF-02 | Είναι υποχρεωτική η ασφάλιση αστικής ευθύνης; | `mintour_str_specs_circular_2025.pdf` | ✅ | |
 | SAF-03 | Υπάρχουν ελάχιστες απαιτήσεις για φωτισμό ή αερισμό; | `mintour_str_specs_circular_2025.pdf` | ✅ | Light, ventilation and ceiling height ✅; |
 | SAF-04 | Τι θα πρέπει να περιλαμβάνει το φαρμακείο πρώτων βοηθειών του ακινητού; | `mintour_str_specs_circular_2025.pdf` | ✅ | |
-| SAF-05 | Από πότε ισχύουν οι νέες προδιαγραφές για τα ήδη εγγεγραμμένα ακίνητα; | `law_5170_2025.pdf` (άρθ. 3), `mintour_str_specs_circular_2025.pdf` | ✅ | |
+| SAF-05 | Από πότε ισχύουν οι νέες προδιαγραφές για τα ήδη εγγεγραμμένα ακίνητα; | `law_5170_2025_art3.pdf` (άρθ. 3), `mintour_str_specs_circular_2025.pdf` | ✅ | |
 
 ## RES — Περιορισμοί & έλεγχοι
 
@@ -86,7 +75,7 @@ Questions in Greek about **short-term rentals (βραχυχρόνια μίσθω
 |---|---|---|---|---|
 | RES-01 | Μπορώ να εγγράψω νέο ακίνητο στο κέντρο της Αθήνας; | `govgr_str_restrictions_2026.pdf` | ✅ | Time-sensitive: ban runs to 31.12.2026, an extension is expected |
 | RES-02 | Ισχύουν περιορισμοί για νησιά ή άλλες περιοχές; | `govgr_str_restrictions_2026.pdf` | ✅ | Only Athens (1st–3rd districts) + Thessaloniki (Α' Δημ. Κοινότητα) |
-| RES-03 | Ποιος κάνει ελέγχους στα ακίνητα βραχυχρόνιας μίσθωσης; | `law_5170_2025.pdf` (άρθ. 3) | ✅ | Ministry of Tourism staff, joint teams with ΑΑΔΕ; €5,000 fines |
+| RES-03 | Ποιος κάνει ελέγχους στα ακίνητα βραχυχρόνιας μίσθωσης; | `law_5170_2025_art3.pdf` (άρθ. 3) | ✅ | Ministry of Tourism staff, joint teams with ΑΑΔΕ; €5,000 fines |
 | RES-04 | Σε ποιες περιπτώσεις διαγράφεται ένα ακίνητο από το μητρώο; | `aade_str_faq_2025.pdf` (Ερ. 40), `govgr_str_restrictions_2026.pdf` | 🔍 | Partly covered (stopping management; transfer in restricted area) |
 
 ---

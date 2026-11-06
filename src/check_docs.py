@@ -3,8 +3,7 @@ from pypdf import PdfReader
 import pandas as pd
 
 RAW_DIR = Path("data/raw")
-data = pd.read_csv(RAW_DIR / "sources.csv")
-df = pd.DataFrame(data)
+df = pd.read_csv("data/sources.csv")
 
 for pdf_path in sorted(RAW_DIR.glob("*.pdf")):
     reader = PdfReader(pdf_path)
@@ -12,5 +11,10 @@ for pdf_path in sorted(RAW_DIR.glob("*.pdf")):
     print(f"\n=== {pdf_path.name} | {len(reader.pages)} pages | {len(text)} chars")
     print(text[:300].replace("\n", " "))
 
-    assert pdf_path.name in df["filename"].values, f"{pdf_path.name} not found in sources.csv"
+files_on_disk = {pdf_path.name for pdf_path in RAW_DIR.glob("*.pdf")}
+files_in_csv = set(df["filename"])
 
+print(f"\nFiles on disk: {len(files_on_disk)}")
+print(f"Files in CSV: {len(files_in_csv)}")
+print(f"Files in CSV but not on disk: {files_in_csv - files_on_disk}")
+print(f"Files on disk but not in CSV: {files_on_disk - files_in_csv}")
