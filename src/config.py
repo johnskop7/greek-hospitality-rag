@@ -23,6 +23,13 @@ load_dotenv(ROOT / ".env")
 LLM_API_KEY = os.getenv("LLM_API_KEY")
 LLM_MODEL = os.getenv("LLM_MODEL")
 
+# --- LLM call settings -------------------------------------------------------
+# Haiku 5.5 thinks by default and thinking tokens count toward max_tokens, so
+# max_tokens must leave room for thinking *and* the answer.
+LLM_MAX_TOKENS = 2000
+LLM_EFFORT = "low"      # "low" | "medium" (Haiku 5.5 default) | "high" | ...; None = model default
+LLM_THINKING = True     # False sends thinking={"type": "disabled"}
+
 # --- Chunking ----------------------------------------------------------------
 CHUNK_SIZE = 1000      # characters
 OVERLAP = 200          # characters shared by neighbouring chunks
