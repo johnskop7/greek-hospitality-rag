@@ -38,6 +38,12 @@ OVERLAP = 200          # characters shared by neighbouring chunks
 EMBEDDING_MODEL = "intfloat/multilingual-e5-base"
 TOP_K = 15             # chunks passed to the LLM (e5 hit@15 = 0.833, see eval/experiments.md)
 
+# --- Context building (generation only; retrieval metrics are unaffected) -----
+# Neighbours of the best chunks are added and consecutive chunks are merged, so a
+# list keeps its heading (e.g. "Νοέμβριο έως Μάρτιο" in p2_c2 for the amounts in p2_c3).
+EXPAND_TOP = 5         # add neighbours of the EXPAND_TOP best-ranked chunks ...
+NEIGHBOR_WINDOW = 1    # ... up to this many chunks before and after, on the same page
+
 # --- Reranker (experiment only: too slow on CPU for deployment) ---------------
 RERANKER_MODEL = "BAAI/bge-reranker-v2-m3"
 N_CANDIDATES = 30
